@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <style>
+        @media (max-width: 576px) {
+
+            #exam,
+            #qset {
+                font-size: 14px;
+                padding: 15px !important;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+    <script>
+        var exam = [
+            {
+                id: "1",
+                QName: "To deaclare variable in JavaScript we use ______.",
+                op1: "let",
+                op2: "var",
+                op3: "const",
+                op4: "all",
+                cn: "all",
+            },
+            {
+                id: "2",
+                QName: "Inside which HTML element do we put the JavaScript?",
+                op1: "javascript",
+                script: "var",
+                op3: "scripting",
+                op4: "js",
+                cn: "script",
+            },
+            {
+                id: "3",
+                QName: "What does CSS stands for?",
+                op1: "Cascading Stylesheet",
+                op2: "Control Stylesheet ",
+                op3: "Combine Style Server",
+                op4: "Cascading style server",
+                cn: "Cascading Stylesheet",
+            },
+            {
+                id: "4",
+                QName: "What does HTML stand for?",
+                op1: "Hyper Text Makeup Language",
+                op2: "Hyper text markup language",
+                op3: "Handle transmit markup language",
+                op4: "Hyper transfer text language",
+                cn: "Hyper text markup language",
+            },
+            {
+                id: "5",
+                QName: "Which is used to store a function in a single variable",
+                op1: "let",
+                op2: "var",
+                op3: "const",
+                op4: "anonysm",
+                cn: "anonysm",
+            },
+            {
+                id: "6",
+                QName: "Which HTML tag is used to define an internal style sheet?",
+                op1: "script",
+                op2: "style",
+                op3: "css",
+                op4: "all",
+                cn: "<style>",
+            },
+            {
+                id: "7",
+                QName: "Which HTML attribute is used to define inline styles?",
+                op1: "font",
+                op2: "styles",
+                op3: "style",
+                op4: "class",
+                cn: "class",
+            },
+            {
+                id: "8",
+                QName: "Which property is used to change the background color?",
+                op1: "background-color",
+                op2: "bgcolor",
+                op3: "color",
+                op4: "all",
+                cn: "background-color",
+            },
+            {
+                id: "9",
+                QName:
+                    "Which CSS property is used to change the text color of an element?",
+                op1: "fgcolor",
+                op2: "text-color",
+                op3: "color",
+                op4: "all",
+                cn: "color",
+            },
+            {
+                id: "10",
+                QName: "Which CSS property controls the text size?",
+                op1: "text-size",
+                op2: "font-size",
+                op3: "text-style",
+                op4: "font-style",
+                cn: "font-size",
+            },
+            {
+                id: "11",
+                QName: "Who is making the Web standards?",
+                op1: "mozzila",
+                op2: "microsoft",
+                op3: "google",
+                op4: "The World Wide Web Consotium",
+                cn: "The World Wide Web Consotium",
+            },
+            {
+                id: "12",
+                QName: "Choose the correct HTML element for the largest heading:",
+                op1: "heading",
+                op2: "h1",
+                op3: "h6",
+                op4: "all",
+                cn: "h1",
+            },
+            {
+                id: "13",
+                QName: "What is the correct HTML element for inserting a line break?",
+                op1: "lb",
+                op2: "br",
+                op3: "break",
+                op4: "all",
+                cn: "br",
+            },
+            {
+                id: "14",
+                QName: "Which tag is used for Bold the text",
+                op1: "tb",
+                op2: "b",
+                op3: "bold",
+                op4: "all",
+                cn: "b",
+            },
+            {
+                id: "15",
+                QName: "Which tag is used for italic the text",
+                op1: "tb",
+                op2: "b",
+                op3: "i",
+                op4: "all",
+                cn: "i",
+            },
+            {
+                id: "16",
+                QName: "Which tag is used for underline the text",
+                op1: "u",
+                op2: "b",
+                op3: "bold",
+                op4: "all",
+                cn: "u",
+            },
+            {
+                id: "17",
+                QName: "Which shortcut is used for select all the text",
+                op1: "ctrl+s",
+                op2: "ctrl+o",
+                op3: "ctrl+a",
+                op4: "ctrl+h",
+                cn: "ctrl+a",
+            },
+            {
+                id: "18",
+                QName: "Which shortcut is used for undo the text",
+                op1: "ctrl+s",
+                op2: "ctrl+z",
+                op3: "ctrl+a",
+                op4: "ctrl+h",
+                cn: "ctrl+z",
+            },
+            {
+                id: "19",
+                QName: "Which shortcut is used for redo the text",
+                op1: "ctrl+y",
+                op2: "ctrl+z",
+                op3: "ctrl+a",
+                op4: "ctrl+h",
+                cn: "ctrl+y",
+            },
+            {
+                id: "20",
+                QName: "Which shortcut is used for cut the text",
+                op1: "ctrl+s",
+                op2: "ctrl+z",
+                op3: "ctrl+a",
+                op4: "ctrl+x",
+                cn: "ctrl+x",
+            },
+        ];
+        var nm;
+        var pass;
+        var x = 0;
+        var tm = 59;
+        var p;
+        var m = 0,
+            s = 0;
+
+        function valid() {
+            nm = document.getElementById("name").value;
+            pass = document.getElementById("p").value;
+            if (nm == "" || pass == "")
+                alert("Enter user name and password")
+            else
+                startTest()
+        }
+        function startTest(str, id) {
+            getAll();
+            tm = 59;
+            clearInterval(p);
+            p = setInterval(gettm, 1000);
+            //gettm()
+            if (str == "nxt") x++;
+            if (str == "pre") x--;
+            if (str == "sp") x = id;
+            var data = `<form>
+            <br><h6 style="color:green">${exam[x].id}&emsp;:&emsp;${exam[x].QName}</h6><br><hr>
+                <br><br>
+                <input type="hidden" name="qn" value='${exam[x].QName}'>
+                <input type="hidden" name="cn" value='${exam[x].cn}'>
+
+                <input type="radio" name="op" value='${exam[x].op1}'>&emsp;&emsp; ${exam[x].op1}<br>
+                <input type="radio" name="op" value='${exam[x].op2}'>&emsp;&emsp; ${exam[x].op2}<br>
+                <input type="radio" name="op" value='${exam[x].op3}'>&emsp;&emsp; ${exam[x].op3}<br>
+                <input type="radio" name="op" value='${exam[x].op4}'>&emsp;&emsp; ${exam[x].op4}<br>
+                <br><hr>
+                <br>&emsp;
+                <button type="button" value="previous" class="btn btn-danger w-100 w-md-auto" id="pre" onclick="startTest('pre')">Prev</button>
+                &emsp;&emsp;
+                <button type="button" value="confirm" class="btn btn-primary w-100 w-md-auto" onclick="getAns(this.form)">Save</button>
+                &emsp;&emsp;
+                <button type="button" value="next" class="btn btn-success w-100 w-md-auto" id="nxt" onclick="startTest('nxt')">Next</button>
+                </form>
+            `;
+            document.getElementById("time").style.display = "block";
+            document.getElementById("timer").style.display = "block";
+            document.getElementById("qset").style.display = "block";
+            document.getElementById("exam").innerHTML = data;
+
+        }
+
+
+        function gettm() {
+            document.getElementById("timer").innerHTML =
+                "Total Time Count : " + m + "min  : " + s + "sec";
+            s++;
+            if (s >= 59) {
+                s = 1;
+                m++;
+            }
+            document.getElementById("time").innerHTML = "Time left : " + tm;
+            tm--;
+            if (tm <= 1) {
+                startTest("nxt");
+            }
+        }
+
+        function valid1() {
+            nm = document.getElementById("name").value
+            if (nm == "") {
+                document.getElementById("un").innerHTML = " *Enter User name";
+                document.getElementById("name").style.border = "2px solid red";
+            } else {
+                document.getElementById("un").innerHTML = "";
+                document.getElementById("name").style.border = "2px solid green";
+            }
+        }
+        function valid2() {
+            pass = document.getElementById("p").value;
+            if (pass == "") {
+                document.getElementById("ps").innerHTML = " *Please Enter Password";
+                document.getElementById("p").style.border = "2px solid red";
+            } else {
+                document.getElementById("ps").innerHTML = "";
+                document.getElementById("p").style.border = "2px solid green";
+            }
+        }
+
+        function getAll() {
+            var s = `
+            <h5 class="text-center"><hr><center>Questions Set</center><hr></h5>
+            `;
+            for (i = 0; i < exam.length; i++) {
+                s =
+                    s +
+                    `<div class="d-flex flex-wrap gap-2">
+                    <button type='button' class='btn btn-outline-success m-1' id="op" value='${i}' onclick="startTest('sp',${i})"> &emsp;${exam[i].id}&emsp;`;
+            }
+            s += `</div>
+                    <div class="d-grid gap-3 mt-4">
+                    <button type="button" class="btn btn-success w-100 w-md-auto" onclick="getResult()">
+                        Check Status
+                    </button>
+                    </div>
+                `
+            document.getElementById("qset").innerHTML = s;
+        }
+        var cn = []
+        function getAns(userdata) {
+            var qn = userdata.qn.value
+            var uns = userdata.op.value
+            var ans = userdata.cn.value
+            var dt = { "qn": qn, "uns": uns, "ans": ans }
+            var d = cn.filter(item => item.qn == qn)
+            if (d.length > 0) {
+                var pos = cn.findIndex(item => item.qn == qn)
+                cn[pos].uns = uns
+            }
+            else {
+                cn.push(dt)
+                console.log(cn)
+                startTest('nxt')
+            }
+
+        }
+
+        function getResult() {
+
+            var cr = 0, wr = 0, at = 0
+            cn.forEach(item => {
+                at++
+                if (item.uns == item.ans) {
+                    cr++
+                }
+                else {
+                    wr++
+                }
+            });
+            var s = `<br><table class="table table-bordered table-striped table-hover table-dark>"<br>
+                <tr><center><h6>Your Status</h6></center></tr><hr><br>
+                <tr><td>Name</td><td>${nm}</td></tr>
+                <tr><td>Total Questions</td><td>20</td></tr>
+                <tr><td>Attempted</td><td>${at}</td></tr>
+                <tr><td>Correct</td><td>${cr}</td></tr>
+                <tr><td>Wrong</td><td>${wr}</td></tr>
+            </table>
+            `
+            document.getElementById("qset").style.display = "block"
+            document.getElementById("qset").innerHTML = s
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>
+            <center>
+                <hr />
+                QUIZ QUESTIONS
+                <hr />
+            </center>
+        </h2>
+        <div class="row">
+            <div class="col-md-1 col-12"></div>
+            <div class="col-md-4 col-12 mx-auto" style="
+            padding: 10px;
+            display: none;
+            font-size: 12px;
+            font-weight: bold;
+          " id="time"></div>
+            <div class="col-md-2 col-12"></div>
+            <div class="col-md-4 col-12 mx-auto" style="
+            padding: 10px;
+            display: none;
+            font-size: 12px;
+            font-weight: bold;
+          " id="timer"></div>
+            <div class="row">
+                <div class="col-md-1 col-12 mx-auto"></div>
+                <div class="col-md-5 col-12 mx-auto shadow-lg"
+                    style="padding: 20px; border-radius: 20px; font-size: 15px" id="exam">
+                    Enter Name
+                    <input type="text" class="form-control" id="name" onblur="valid1()" />
+                    <div class="row" id="un" style="color: rgb(241, 82, 82); font-size: 10px;"></div>
+                    <br />
+                    Enter Password
+                    <input type="password" class="form-control" id="p" onblur="valid2()" />
+                    <div class="row" id="ps" style="color: rgb(241, 82, 82); font-size: 10px;"></div>
+                    <br />
+                    <div class="d-grid gap-2 col-3 mx-auto">
+                        <button type="button" class="btn btn-success w-100 w-md-auto" onclick="valid()">
+                            Start Test
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-1 col-12 mx-auto"></div>
+                <div class="col-md-4 col-12 mx-auto shadow-lg" style="
+              padding: 10px;
+              border: 5px solid rgb(9, 106, 9);
+              border-top-style: dashed;
+              border-radius: 20px;
+              font-size: 18px; display: none;" id="qset"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
